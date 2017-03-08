@@ -17,7 +17,8 @@
         <tr ng-repeat="place in homeCtrl.places">
             <td>{{place.name}}</td>
             <td>{{place.description}}</td>
-            <td><a href="https://www.google.com/maps?q= {{place.location[0]}},{{place.location[1]}}" > click here </a></td>
+            <td><a class="btn btn-info"
+              ng-href="https://www.google.com/maps?q= {{place.location[0]}},{{place.location[1]}}" >finger punch google</a></td>
 
         </tr>
     </table>
