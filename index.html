@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="topSpots">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body ng-controller="HomeController as homeCtrl">
+    <h1> Not so cold spots in SD </h1>
+
+    <table class="table">
+        <tr>
+            <th>spot</th>
+            <th>INFO</th>
+            <th>G-Link</th>
+        </tr>
+        <tr ng-repeat="place in homeCtrl.places">
+            <td>{{place.name}}</td>
+            <td>{{place.description}}</td>
+            <td><a href="https://www.google.com/maps?q= {{place.location[0]}},{{place.location[1]}}" > click here </a></td>
+
+        </tr>
+    </table>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="angular.js"></script>
+</body>
+
+</html>
